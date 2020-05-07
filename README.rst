@@ -1,6 +1,6 @@
-=================
+==============
 Choosing Boxes 
-=================
+==============
 
 You're given three boxes with values 17, 21, and 19.
 
