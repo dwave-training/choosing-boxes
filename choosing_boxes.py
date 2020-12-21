@@ -46,7 +46,7 @@ def run_on_qpu(Q, sampler):
 
     numruns = 1 # update
 
-    sample_set = sampler.sample_qubo(Q, chain_strength=chainstrength, num_reads=numruns)
+    sample_set = sampler.sample_qubo(Q, num_reads=numruns)
 
     return sample_set
 
