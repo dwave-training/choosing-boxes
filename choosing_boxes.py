@@ -58,6 +58,8 @@ if __name__ == "__main__":
     token = get_token()
     Q = get_qubo(S)
 
+    #TODO:  Write code to define your sampler
+
     #TODO:  Write code to run your problem
 
     #TODO:  Write code to look at the solutions returned
