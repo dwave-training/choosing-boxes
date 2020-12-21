@@ -44,7 +44,6 @@ def run_on_qpu(Q, sampler):
         sampler(dimod.Sampler): a sampler that uses the QPU
     """
 
-    chainstrength = 1 # update
     numruns = 1 # update
 
     sample_set = sampler.sample_qubo(Q, chain_strength=chainstrength, num_reads=numruns)
