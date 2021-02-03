@@ -15,8 +15,8 @@ that the desired solution (boxes 17 and 19) has the smallest value.
 *For students in class submitting to our autograder:*
 
 Please index boxes 17, 21, and 19, using 0, 1, and 2, respectively, in your Q
-dictionary.  In other words, the coefficient on the linear term for Box 17
-should be placed in the (0,0) position in the dictionary (Q[(0,0)]).
+dictionary.  For example, if the coefficient on the linear term for Box 17
+is 5, your program will assign `Q[(0,0)]=5`.
 
 ## Instructions
 
