@@ -55,7 +55,6 @@ if __name__ == "__main__":
 
     S = [17, 21, 19]
 
-    token = get_token()
     Q = get_qubo(S)
 
     #TODO:  Write code to define your sampler
