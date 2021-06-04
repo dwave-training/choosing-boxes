@@ -30,3 +30,7 @@ To write your program, please complete the following in `choosing_boxes.py`:
   running your problem on that sampler, and looking at the results.  "Looking
 at the results" may be as simple as printing out the sampleset object - it's up
 to you!
+
+## License
+
+Released under the Apache License 2.0. See [LICENSE](LICENSE) file.
