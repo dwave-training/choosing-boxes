@@ -14,6 +14,7 @@
 
 ## ------- import packages -------
 from dwave.system import DWaveSampler, EmbeddingComposite
+from dimod import BinaryQuadraticModel
 
 def get_token():
     '''Returns personal access token. Only required if submitting to autograder.'''
@@ -21,32 +22,33 @@ def get_token():
     # TODO: Enter your token here
     return 'YOUR-TOKEN-HERE'
 
-# TODO:  Add code here to define your QUBO dictionary
-def get_qubo(S):
+# TODO:  Add code here to define your BQM
+def get_bqm(S):
     """Returns a dictionary representing a QUBO.
 
     Args:
         S(list of integers): the value for each box
     """
 
-    Q = {}
+    bqm = BinaryQuadraticModel('BINARY')
 
-    # Add QUBO construction here
+    # Add BQM construction here
     
-    return Q
+    return bqm
 
 # TODO:  Choose QPU parameters in the following function
-def run_on_qpu(Q, sampler):
-    """Runs the QUBO problem Q on the sampler provided.
+def run_on_qpu(bqm, sampler):
+    """Runs the BQM on the sampler provided.
 
     Args:
-        Q(dict): a representation of a QUBO
-        sampler(dimod.Sampler): a sampler that uses the QPU
+        bqm (BinaryQuadraticModel): a BQM for the problem;
+            variable names should be 'box_17', 'box_21', and 'box_19'
+        sampler (dimod.Sampler): a sampler that uses the QPU
     """
 
     numruns = 1 # update
 
-    sample_set = sampler.sample_qubo(Q, num_reads=numruns, label='Training - Choosing Boxes')
+    sample_set = sampler.sample(bqm, num_reads=numruns, label='Training - Choosing Boxes')
 
     return sample_set
 
@@ -55,7 +57,7 @@ if __name__ == "__main__":
 
     S = [17, 21, 19]
 
-    Q = get_qubo(S)
+    bqm = get_bqm(S)
 
     #TODO:  Write code to define your sampler
 
