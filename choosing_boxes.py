@@ -30,7 +30,7 @@ def get_bqm(S):
         S(list of integers): the value for each box
     """
 
-    bqm = BinaryQuadraticModel()
+    bqm = BinaryQuadraticModel('BINARY')
 
     # Add BQM construction here
     
