@@ -17,7 +17,7 @@ that the desired solution (boxes 17 and 19) has the smallest value.
 Please index boxes 17, 21, and 19, using the string names 'box_17', 'box_19',
 and 'box_21', respectively, in your BQM.  For example, if the coefficient on
 the linear term for Box 17 is 5, your program might set
-`bqm.set_linear('box_17') = 5`.
+`bqm.set_linear('box_17', 5)`.
 
 ## Instructions
 
