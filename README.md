@@ -1,7 +1,3 @@
-[![Open in Leap IDE](	
-	https://cdn-assets.cloud.dwavesys.com/shared/latest/badges/leapide.svg)](
-	https://ide.dwavesys.io/#https://github.com/dwave-training/choosing-boxes)
-
 
 # Choosing Boxes
 
@@ -28,7 +24,6 @@ the linear term for Box 17 is 5, your program might set
 
 To write your program, please complete the following in `choosing_boxes.py`:
 
-- Add your token to the ``get_token`` function.
 - Build your BQM in the ``get_bqm`` function, and set the Lagrange parameter.
 - Find a good value ``numruns`` in the ``run_on_qpu`` function
 - Complete the main function (bottom of the file) by defining a sampler,

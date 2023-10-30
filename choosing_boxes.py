@@ -16,12 +16,6 @@
 from dwave.system import DWaveSampler, EmbeddingComposite
 from dimod import BinaryQuadraticModel
 
-def get_token():
-    '''Returns personal access token. Only required if submitting to autograder.'''
-    
-    # TODO: Enter your token here
-    return 'YOUR-TOKEN-HERE'
-
 # TODO:  Add code here to define your BQM
 def get_bqm(S):
     """Returns a dictionary representing a QUBO.
