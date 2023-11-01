@@ -1,4 +1,7 @@
-
+[![Open in GitHub Codespaces](
+  https://img.shields.io/badge/Open%20in%20GitHub%20Codespaces-333?logo=github)](
+  https://codespaces.new/dwave-training/choosing-boxes?quickstart=1)
+  
 # Choosing Boxes
 
 You're given three boxes with values 17, 21, and 19.
